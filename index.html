@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>一键自信小工具</title>
+<meta charset="gbk">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script>
+function output()
+{
+    var x = document.getElementById("name").value;
+    var output;
+    if (x == null || x == "") 
+{
+        output = ("不输入名字的话我怎么知道你叫啥呀QAQ");
+}
+    else if (x == "benwata"|| x == "bwt"||x == "Hoaka"||x == "hoaka"||x == "ベンワタ"||x == "御灯"||x == "火明")
+    {
+        output = ("太棒了，"+ x + "什么都不会！");
+    }
+    else
+    {
+        output = ("太棒了，" + x + "什么都会！");
+    }
+    document.getElementById("output").innerHTML = output;
+}
+</script>
+</head>
+<body>
+<h1>一键自信小工具</h1>
+<p>来变得更有自信吧！</p>
+<hr />
+<p>在下面的输入框里输入你的名字并点击提交按钮，即可获得今日份的自信！</p>
+<p class="notice">注：最多只能输入20个字符哦qwq</p>
+输入你的名字: <input type="input" id="name">
+<button type="button" class="button" onclick="output()">激情提交！</button>
+<hr />
+<p id="output"></p>
+</body>
+</html>
