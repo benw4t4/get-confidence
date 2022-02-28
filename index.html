@@ -8,7 +8,7 @@
   <script>
 function output()
 {
-    var x = document.getElementById("name").value;  //拉取输入框里的文字
+    var x = document.getElementById("name").value;
     var output;
     if (x == null || x == "") 
     {
@@ -22,7 +22,7 @@ function output()
     {
         output = ("太棒了，" + x + "什么都会！");
     }
-    document.getElementById("output").innerHTML = output;  //输出结果
+    document.getElementById("output").innerHTML = output;
 }
   </script>
 </head>
@@ -36,6 +36,6 @@ function output()
   输入你的名字: <input type="input" id="name">
   <button type="button" class="button" onclick="output()">激情提交！</button>
 <hr />
-  <p id="output"></p>  //输出的结果会显示在这里
+  <p id="output"></p>
 </body>
 </html>
