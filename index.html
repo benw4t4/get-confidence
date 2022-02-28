@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Ò»¼ü×ÔĞÅĞ¡¹¤¾ß</title>
-<meta charset="gbk">
-<link rel="stylesheet" type="text/css" href="style.css">
-<script>
+  <title>ä¸€é”®è‡ªä¿¡å°å·¥å…·</title>
+  <meta charset="utf-8">
+  <meta name="author" content="benwata">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script>
 function output()
 {
-    var x = document.getElementById("name").value;
+    var x = document.getElementById("name").value;  //æ‹‰å–è¾“å…¥æ¡†é‡Œçš„æ–‡å­—
     var output;
     if (x == null || x == "") 
-{
-        output = ("²»ÊäÈëÃû×ÖµÄ»°ÎÒÔõÃ´ÖªµÀÄã½ĞÉ¶Ñ½QAQ");
-}
-    else if (x == "benwata"|| x == "bwt"||x == "Hoaka"||x == "hoaka"||x == "¥Ù¥ó¥ï¥¿"||x == "ÓùµÆ"||x == "»ğÃ÷")
     {
-        output = ("Ì«°ôÁË£¬"+ x + "Ê²Ã´¶¼²»»á£¡");
+        output = ("ä¸è¾“å…¥åå­—çš„è¯æˆ‘æ€ä¹ˆçŸ¥é“ä½ å«å•¥å‘€QAQ");
+    }
+    else if (x == "benwata"|| x == "bwt"||x == "Hoaka"||x == "hoaka"||x == "ãƒ™ãƒ³ãƒ¯ã‚¿"||x == "å¾¡ç¯"||x == "ç«æ˜")
+    {
+        output = ("å¤ªæ£’äº†ï¼Œ"+ x + "ä»€ä¹ˆéƒ½ä¸ä¼šï¼");
     }
     else
     {
-        output = ("Ì«°ôÁË£¬" + x + "Ê²Ã´¶¼»á£¡");
+        output = ("å¤ªæ£’äº†ï¼Œ" + x + "ä»€ä¹ˆéƒ½ä¼šï¼");
     }
-    document.getElementById("output").innerHTML = output;
+    document.getElementById("output").innerHTML = output;  //è¾“å‡ºç»“æœ
 }
-</script>
+  </script>
 </head>
+    
 <body>
-<h1>Ò»¼ü×ÔĞÅĞ¡¹¤¾ß</h1>
-<p>À´±äµÃ¸üÓĞ×ÔĞÅ°É£¡</p>
+  <h1>ä¸€é”®è‡ªä¿¡å°å·¥å…·</h1>
+    <p>æ¥å˜å¾—æ›´æœ‰è‡ªä¿¡å§ï¼</p>
 <hr />
-<p>ÔÚÏÂÃæµÄÊäÈë¿òÀïÊäÈëÄãµÄÃû×Ö²¢µã»÷Ìá½»°´Å¥£¬¼´¿É»ñµÃ½ñÈÕ·İµÄ×ÔĞÅ£¡</p>
-<p class="notice">×¢£º×î¶àÖ»ÄÜÊäÈë20¸ö×Ö·ûÅ¶qwq</p>
-ÊäÈëÄãµÄÃû×Ö: <input type="input" id="name">
-<button type="button" class="button" onclick="output()">¼¤ÇéÌá½»£¡</button>
+  <p>åœ¨ä¸‹é¢çš„è¾“å…¥æ¡†é‡Œè¾“å…¥ä½ çš„åå­—å¹¶ç‚¹å‡»æäº¤æŒ‰é’®ï¼Œå³å¯è·å¾—ä»Šæ—¥ä»½çš„è‡ªä¿¡ï¼</p>
+  <p class="notice">æ³¨ï¼šæœ€å¤šåªèƒ½è¾“å…¥20ä¸ªå­—ç¬¦å“¦qwq</p>
+  è¾“å…¥ä½ çš„åå­—: <input type="input" id="name">
+  <button type="button" class="button" onclick="output()">æ¿€æƒ…æäº¤ï¼</button>
 <hr />
-<p id="output"></p>
+  <p id="output"></p>  //è¾“å‡ºçš„ç»“æœä¼šæ˜¾ç¤ºåœ¨è¿™é‡Œ
 </body>
 </html>
